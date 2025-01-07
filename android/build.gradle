@@ -1,21 +1,24 @@
+apply plugin: "com.facebook.react.rootproject"
+apply plugin: "com.google.gms.google-services"
+
 buildscript {
     ext {
-        buildToolsVersion = "35.0.0"
+        buildToolsVersion = "35.0.0" // Verify if this version exists; it may not be valid.
         minSdkVersion = 24
-        compileSdkVersion = 35
+        compileSdkVersion = 34 // Use 34; SDK 35 might not be available yet.
         targetSdkVersion = 34
-        ndkVersion = "26.1.10909125"
-        kotlinVersion = "1.9.24"
+        ndkVersion = "26.1.10909125" // Replace with the correct NDK version installed.
+        kotlinVersion = "1.9.10" // Use a valid Kotlin version.
     }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle")
+        // Specify the version for the Gradle plugin
+        classpath("com.android.tools.build:gradle") // Use the latest compatible version.
         classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("com.google.gms:google-services:4.3.15") // Use the latest version.
     }
 }
-
-apply plugin: "com.facebook.react.rootproject"

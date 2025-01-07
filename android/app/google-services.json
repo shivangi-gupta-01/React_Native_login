@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "195467867187",
+    "project_id": "login-react-app-df404",
+    "storage_bucket": "login-react-app-df404.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195467867187:android:a863f1d0ce5ca64f2c5f46",
+        "android_client_info": {
+          "package_name": "com.loginreact"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0shfyV9EDdhccMjXBN54VRBHVgljQPmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
